@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ShopAPI.Model;
 using System.Net.Mail;
+using ShopAPI.DTO;
 
 namespace ShopAPI.Controllers
 {
@@ -34,10 +36,10 @@ namespace ShopAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateOrder([FromBody] object order)
+        public IActionResult CreateOrder([FromBody] OrderDTO order)
         {
             // Logic to create an order
-            return CreatedAtAction(nameof(GetOrders), new { Message = "Order created successfully." });
+            return CreatedAtAction(nameof(GetOrders), new { Message = $"Order for {order.CustomerId} created successfully." });
         }
     }
 }
