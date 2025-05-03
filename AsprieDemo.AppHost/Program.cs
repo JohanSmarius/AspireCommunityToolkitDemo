@@ -8,14 +8,10 @@ var cache = builder.AddRedis("cache");
 var ollama = builder.AddOllama("ollama");
 var phi35 = ollama.AddModel("phi3.5");
 
-var papercut = builder.AddPapercutSmtp("papercut");
-
 var sqlite = builder.AddSqlite("sqlite").WithSqliteWeb();
-
 
 var api = builder.AddProject<Projects.ShopAPI>("shopapi")
     .WithReference(sqlite)
-    .WithReference(papercut)
     .WithReference(phi35)
     .WaitFor(sqlite);
 
