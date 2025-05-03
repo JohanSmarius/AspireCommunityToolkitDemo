@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>b518183f-01e0-40cd-9192-d467299a79a9</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AsprieDemo.Web\AsprieDemo.Web.csproj" />
+    <ProjectReference Include="..\ShopAPI\ShopAPI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.2.1" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="9.2.1" />
+    <PackageReference Include="CommunityToolkit.Aspire.Hosting.Ollama" Version="9.4.0" />
+    <PackageReference Include="CommunityToolkit.Aspire.Hosting.PapercutSmtp" Version="9.4.0" />
+    <PackageReference Include="CommunityToolkit.Aspire.Hosting.Sqlite" Version="9.4.0" />
+  </ItemGroup>
+
+</Project>
