@@ -12,6 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AsprieDemo.ApiService\AsprieDemo.ApiService.csproj" />
     <ProjectReference Include="..\AsprieDemo.Web\AsprieDemo.Web.csproj" />
     <ProjectReference Include="..\ShopAPI\ShopAPI.csproj" />
   </ItemGroup>

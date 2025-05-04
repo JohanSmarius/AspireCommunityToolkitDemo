@@ -12,6 +12,11 @@ var papercut = builder.AddPapercutSmtp("papercut");
 
 var sqlite = builder.AddSqlite("sqlite").WithSqliteWeb();
 
+var weatherApi = builder.AddProject<Projects.AsprieDemo_ApiService>("weatherapi")
+    .WithReference(sqlite)
+    .WithReference(phi35)
+    .WaitFor(sqlite);
+
 
 var api = builder.AddProject<Projects.ShopAPI>("shopapi")
     .WithReference(sqlite)
@@ -25,7 +30,8 @@ builder.AddProject<Projects.AsprieDemo_Web>("webfrontend")
     .WithReference(cache)
     .WaitFor(cache)
     .WithReference(api)
-    .WaitFor(api);
+    .WaitFor(api)
+    .WithReference(weatherApi);
 
 
 builder.Build().Run();
