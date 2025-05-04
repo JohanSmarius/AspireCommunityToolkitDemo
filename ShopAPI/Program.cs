@@ -16,14 +16,14 @@ builder.Services.AddOpenApi();
 builder.AddSqliteDbContext<OrderContext>("sqlite");
 
 
-string? papercutConnectionString = builder.Configuration.GetConnectionString("papercut");
-DbConnectionStringBuilder connectionBuilder = new()
-{
-    ConnectionString = papercutConnectionString
-};
-
-Uri endpoint = new(connectionBuilder["Endpoint"].ToString()!, UriKind.Absolute);
-builder.Services.AddScoped(_ => new SmtpClient(endpoint.Host, endpoint.Port));
+// string? papercutConnectionString = builder.Configuration.GetConnectionString("papercut");
+// DbConnectionStringBuilder connectionBuilder = new()
+// {
+//     ConnectionString = papercutConnectionString
+// };
+//
+// Uri endpoint = new(connectionBuilder["Endpoint"].ToString()!, UriKind.Absolute);
+// builder.Services.AddScoped(_ => new SmtpClient(endpoint.Host, endpoint.Port));
 
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 
