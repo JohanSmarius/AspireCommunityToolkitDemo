@@ -22,13 +22,13 @@ namespace ShopAPI.Controllers
         [HttpGet]
         public IActionResult GetOrders()
         {
-
-            MailMessage mailMessage = new MailMessage();
-            mailMessage.From = new MailAddress("jsmarius@hotmail.com");
-            mailMessage.To.Add(new MailAddress("jsmarius@hotmail.com"));
-            mailMessage.Subject = "Test Email";
-            mailMessage.Body = "Orders retrieved";
-            _smtpClient.Send(mailMessage);
+            // Mailing does not work well on this mac.
+            // MailMessage mailMessage = new MailMessage();
+            // mailMessage.From = new MailAddress("jsmarius@hotmail.com");
+            // mailMessage.To.Add(new MailAddress("jsmarius@hotmail.com"));
+            // mailMessage.Subject = "Test Email";
+            // mailMessage.Body = "Orders retrieved";
+            // _smtpClient.Send(mailMessage);
 
 
             // Logic to get orders
