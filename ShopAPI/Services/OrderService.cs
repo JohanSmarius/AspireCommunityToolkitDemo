@@ -1,4 +1,5 @@
-﻿using ShopAPI.Exceptions;
+﻿using CommunityToolkit.Diagnostics;
+using ShopAPI.Exceptions;
 using ShopAPI.Model;
 using ShopAPI.Repository;
 
@@ -32,7 +33,8 @@ public class OrderService
 
         if (customer.HasBackPayments)
         {
-            throw new OrderException("Customer has back payments");
+            ThrowHelper.ThrowExternalException<OrderException>("Customer has back payments");
+//            throw new OrderException("Customer has back payments");
         }
 
         if (order.OrderStatus != OrderStatus.NEW)

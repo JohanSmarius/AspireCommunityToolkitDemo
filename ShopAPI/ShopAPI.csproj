@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AsprieDemo.ServiceDefaults\AsprieDemo.ServiceDefaults.csproj" />
+      <ProjectReference Include="..\AspireDemo.ServiceDefaults\AspireDemo.ServiceDefaults.csproj" />
     </ItemGroup>
 
 </Project>

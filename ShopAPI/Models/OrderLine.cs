@@ -1,4 +1,6 @@
-﻿namespace ShopAPI.Model;
+﻿using CommunityToolkit.Diagnostics;
+
+namespace ShopAPI.Model;
 
 public class OrderLine
 {

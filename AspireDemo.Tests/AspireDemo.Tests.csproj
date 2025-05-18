@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
+    <RootNamespace>AsprieDemo.Tests</RootNamespace>
   </PropertyGroup>
 
 
@@ -18,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AsprieDemo.AppHost\AsprieDemo.AppHost.csproj" />
+    <ProjectReference Include="..\AspireDemo.AppHost\AspireDemo.AppHost.csproj" />
   </ItemGroup>
 
   <ItemGroup>

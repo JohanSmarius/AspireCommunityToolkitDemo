@@ -2,17 +2,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsprieDemo.AppHost", "AsprieDemo.AppHost\AsprieDemo.AppHost.csproj", "{01AC600A-D6CC-4518-BB61-D1FBE8935D0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDemo.AppHost", "AspireDemo.AppHost\AspireDemo.AppHost.csproj", "{01AC600A-D6CC-4518-BB61-D1FBE8935D0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsprieDemo.ServiceDefaults", "AsprieDemo.ServiceDefaults\AsprieDemo.ServiceDefaults.csproj", "{8E17DC38-8D55-D980-0314-B19DB34BE8A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDemo.ServiceDefaults", "AspireDemo.ServiceDefaults\AspireDemo.ServiceDefaults.csproj", "{8E17DC38-8D55-D980-0314-B19DB34BE8A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsprieDemo.Web", "AsprieDemo.Web\AsprieDemo.Web.csproj", "{6075C125-FCC5-EEAD-77C3-1A6200F10268}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDemo.Web", "AspireDemo.Web\AspireDemo.Web.csproj", "{6075C125-FCC5-EEAD-77C3-1A6200F10268}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsprieDemo.Tests", "AsprieDemo.Tests\AsprieDemo.Tests.csproj", "{60C33891-ECBB-D426-375E-A6398ED457DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDemo.Tests", "AspireDemo.Tests\AspireDemo.Tests.csproj", "{60C33891-ECBB-D426-375E-A6398ED457DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopAPI", "ShopAPI\ShopAPI.csproj", "{DB6E7EDA-6BD6-0D3A-85AD-2A9EB6864B8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsprieDemo.ApiService", "AsprieDemo.ApiService\AsprieDemo.ApiService.csproj", "{97447F20-9481-73C8-146A-151A1E5D150C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDemo.ApiService", "AspireDemo.ApiService\AspireDemo.ApiService.csproj", "{97447F20-9481-73C8-146A-151A1E5D150C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

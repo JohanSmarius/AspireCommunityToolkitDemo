@@ -9,11 +9,12 @@
     <Nullable>enable</Nullable>
     <IsAspireHost>true</IsAspireHost>
     <UserSecretsId>b518183f-01e0-40cd-9192-d467299a79a9</UserSecretsId>
+    <RootNamespace>AsprieDemo.AppHost</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AsprieDemo.ApiService\AsprieDemo.ApiService.csproj" />
-    <ProjectReference Include="..\AsprieDemo.Web\AsprieDemo.Web.csproj" />
+    <ProjectReference Include="..\AspireDemo.ApiService\AspireDemo.ApiService.csproj" />
+    <ProjectReference Include="..\AspireDemo.Web\AspireDemo.Web.csproj" />
     <ProjectReference Include="..\ShopAPI\ShopAPI.csproj" />
   </ItemGroup>
 
@@ -21,7 +22,7 @@
     <PackageReference Include="Aspire.Hosting.AppHost" Version="9.2.1" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="9.2.1" />
     <PackageReference Include="CommunityToolkit.Aspire.Hosting.Ollama" Version="9.4.0" />
-    <PackageReference Include="CommunityToolkit.Aspire.Hosting.PapercutSmtp" Version="9.4.0" />
+    <PackageReference Include="CommunityToolkit.Aspire.Hosting.PapercutSmtp" Version="9.4.1-beta.289" />
     <PackageReference Include="CommunityToolkit.Aspire.Hosting.Sqlite" Version="9.4.0" />
   </ItemGroup>
 
